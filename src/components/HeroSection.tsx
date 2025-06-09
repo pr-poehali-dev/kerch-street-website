@@ -3,6 +3,17 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section className="min-h-screen bg-black flex items-center justify-center relative overflow-hidden">
+      {/* Фоновое изображение */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            "url(https://cdn.poehali.dev/files/7e5cb678-fcd6-447d-886b-5bd63053dbf7.png)",
+        }}
+      ></div>
+      {/* Темный overlay для читаемости текста */}
+      <div className="absolute inset-0 bg-black bg-opacity-75"></div>
+
       <div className="text-center z-10 px-4">
         <h1 className="font-montserrat text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-tight">
           <span className="text-[#ea384c]">У</span>ЛИЦА
